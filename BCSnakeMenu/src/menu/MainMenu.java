@@ -3,6 +3,10 @@ package menu;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 
+/*
+ * Tutorials referenced: https://www.youtube.com/watch?v=fVY4fz5Jz_U
+ */
+
 public class MainMenu extends MouseAdapter {
 	
 	boolean active;
@@ -27,8 +31,7 @@ public class MainMenu extends MouseAdapter {
 	String textExit = "Exit";
 	boolean eHighlighted = false;
 	
-	public static void main(String args[]) {
-		System.out.println("Hello World");
+	public MainMenu() {;
 		
 
 		
