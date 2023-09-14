@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author conannguyen
- *
- */
-module BCSnakeMenu {
-}
