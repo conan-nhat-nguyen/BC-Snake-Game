@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Lucif
+ *
+ */
+module BCSnakeGame {
+}
