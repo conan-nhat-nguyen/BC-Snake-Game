@@ -13,9 +13,10 @@ public class Window {
 		frame.add(game);
 		frame.pack();
 		frame.setLocationRelativeTo(null);
-		frame.setVisible(false);
+		frame.setVisible(true);
 		
 		game.start();
+		
 	}
 
 }
