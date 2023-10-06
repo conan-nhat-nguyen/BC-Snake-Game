@@ -55,4 +55,3 @@ public class theSnake {
 		}
 	}
 }
->>>>>>> branch 'main' of https://github.com/conan-nhat-nguyen/BC-Snake-Game.git

@@ -6,7 +6,7 @@ public class FrameScreen extends JFrame {
 	
 	public FrameScreen() {
 		mainGame = new MainGame();
-		add (mainGame);
+		add(mainGame);
 
 		
 		
@@ -16,9 +16,7 @@ public class FrameScreen extends JFrame {
 		f.setVisible(true);
 		f.setSize(500,500);
 		
-		
-		
 	}
 
 }
->>>>>>> branch 'main' of https://github.com/conan-nhat-nguyen/BC-Snake-Game.git
+

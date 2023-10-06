@@ -47,11 +47,7 @@ public class MainGame extends JPanel implements Runnable {
 	public void paint(Graphics g) {
 		paintBg(g);
 		snake.drawSnake(g);
-		
-		
-		
-		
 	}
 
 }
->>>>>>> branch 'main' of https://github.com/conan-nhat-nguyen/BC-Snake-Game.git
+

@@ -50,11 +50,7 @@ public class SnakeGame extends JFrame{
 			// TODO Auto-generated method stub
 			
 		}
-		
-		
-		
-		
 	}
 
 }
->>>>>>> branch 'main' of https://github.com/conan-nhat-nguyen/BC-Snake-Game.git
+
