@@ -1,7 +1,10 @@
 package org.example;
-import java.awt.Color;
+import java.awt.*;
+import java.awt.Point;
+
 import java.awt.Graphics;
 import java.util.Iterator;
+import java.util.Random;
 
 public class theSnake {
     int length = 3;
@@ -33,13 +36,46 @@ public class theSnake {
     public void setVector(int Vt) {
         if(vector != -Vt)
             vector = Vt;
-
-
+    }
+    public boolean snakebody(int x1, int y1) {
+    	for(int i = 0; i < length; i++) {
+    		if(x[i]==x1&&y[i]==y1) return true;
+    		
+    		
+    		
+    	}
+    	
+		return false;
 
     }
+    
+    public Point FoodLocations() {
+	   Random r = new Random();
+	   int x;
+	   int y;
+	   do{
+	   x = r.nextInt(29);
+	   y = r.nextInt(19);
+	   }
+	   while(snakebody(x, y));
+	   
+	   
+	return new Point(x,y);
+	   
+	   
+	  
+   }
+
+    
     public void update() {
         if(System.currentTimeMillis()-t1>1000) {
         	
+        	if(MainGame.bg[x[0]][y[0]]==2) {
+        		length++;
+        		MainGame.bg[x[0]][y[0]]=0;
+        		MainGame.bg[FoodLocations().x][FoodLocations().y]=2;
+        	}
+        		
         	
         	
         	for(int i = length-1; i>0;i--) {

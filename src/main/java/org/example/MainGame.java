@@ -40,7 +40,8 @@ public class MainGame extends JPanel implements Runnable {
                     g.setColor(Color.red);
                     g.fillRect(i*20+1, j*20+1, 18, 18);
                     g.setColor(Color.gray);
-//
+
+                
                 }
 
             }

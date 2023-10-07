@@ -13,6 +13,7 @@ public class FrameScreen extends JFrame {
 
         // TODO: add the mainMenu object to FrameScreen
         add(mainGame);
+//        add(mainMenu);
 
 
 
