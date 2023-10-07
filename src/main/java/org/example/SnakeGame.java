@@ -8,12 +8,16 @@ import javax.swing.JPanel;
 public class SnakeGame extends JFrame{
 
     MainGame Sgame;
+    public MainMenu menu;
+
     public SnakeGame() {
         setSize(615,440);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Sgame = new MainGame();
         add(Sgame);
         this.addKeyListener(new handler());
+        this.addMouseListener(menu);
+        this.addMouseMotionListener(menu);
         setVisible(true);
 
     }
