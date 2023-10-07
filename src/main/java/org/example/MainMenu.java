@@ -105,6 +105,39 @@ public class MainMenu extends MouseAdapter implements Runnable {
         graphics2D.draw(settingsButton);
         graphics2D.draw(scoreboardButton);
         graphics2D.draw(exitButton);
+
+        // Draw all buttons' text
+        int stringWidth, stringHeight;
+
+        // Start button text
+        stringWidth = graphics.getFontMetrics(font).stringWidth(startText);
+        stringHeight = graphics.getFontMetrics(font).getHeight();
+        graphics.setColor(Color.BLACK);
+        // TODO: Fix the coordinates
+        graphics.drawString(startText, 100, 100);
+
+        // Settings button text
+        stringWidth = graphics.getFontMetrics(font).stringWidth(settingsText);
+        stringHeight = graphics.getFontMetrics(font).getHeight();
+        graphics.setColor(Color.BLACK);
+        // TODO: Fix the coordinates
+        graphics.drawString(startText, 100, 100);
+
+        // Scoreboard button text
+        stringWidth = graphics.getFontMetrics(font).stringWidth(scoreboardText);
+        stringHeight = graphics.getFontMetrics(font).getHeight();
+        graphics.setColor(Color.BLACK);
+        // TODO: Fix the coordinates
+        graphics.drawString(startText, 100, 100);
+
+        // Settings button text
+        stringWidth = graphics.getFontMetrics(font).stringWidth(exitText);
+        stringHeight = graphics.getFontMetrics(font).getHeight();
+        graphics.setColor(Color.BLACK);
+        // TODO: Fix the coordinates
+        graphics.drawString(startText, 100, 100);
+
+
     }
 
     @Override
