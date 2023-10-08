@@ -8,7 +8,7 @@ public class MainGame extends JPanel implements Runnable {
     static int [][] bg = new int [30][20];
     theSnake snake;
     Thread thread;
-    MainMenu menu;
+     MainMenu menu;
 
     public MainGame() {
         menu = new MainMenu(this);

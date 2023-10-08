@@ -1,0 +1,2 @@
+Realization:
+1. FrameScreen.java is not needed for the snake to move. It can be removed.
