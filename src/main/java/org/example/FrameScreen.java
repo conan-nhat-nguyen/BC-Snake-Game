@@ -12,7 +12,7 @@ public class FrameScreen extends JFrame {
         add(mainGame);
 //        add(mainMenu);
 
-    }s
+    }
 
     public static void main(String as[]) {
         FrameScreen f = new FrameScreen();
