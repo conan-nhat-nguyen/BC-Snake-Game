@@ -17,12 +17,19 @@ public class theSnake {
 
     int vector = theSnake.DOWN;
 
+    private static final int screenWidth = 30;
+    private static final int screenLength = 20;
+
+    // TODO: what is this?
     long t1 = 0;
 
     public theSnake() {
-        x = new int[20];
+        // TODO: Remove the hard-coded snake coordinates at start
+        // The coordinates of the snake
+        x = new int[30];
         y = new int[20];
 
+        // Original location of the snake at the start of the game
         x[0]=5;
         y[0]=4;
         
@@ -40,15 +47,11 @@ public class theSnake {
     public boolean snakebody(int x1, int y1) {
     	for(int i = 0; i < length; i++) {
     		if(x[i]==x1&&y[i]==y1) return true;
-    		
-    		
-    		
     	}
-    	
 		return false;
-
     }
     
+    // Generate random food location on the screen
     public Point FoodLocations() {
 	   Random r = new Random();
 	   int x;
@@ -59,41 +62,39 @@ public class theSnake {
 	   }
 	   while(snakebody(x, y));
 	   
-	   
 	return new Point(x,y);
-	   
-	   
-	  
    }
 
     
     public void update() {
         if(System.currentTimeMillis()-t1>1000) {
-        	
+
+            // If the snake eats the food, the snake lengthens by 1 unit
         	if(MainGame.bg[x[0]][y[0]]==2) {
         		length++;
         		MainGame.bg[x[0]][y[0]]=0;
         		MainGame.bg[FoodLocations().x][FoodLocations().y]=2;
         	}
-        		
-        	
-        	
-        	for(int i = length-1; i>0;i--) {
+
+
+            // Connect the snake's body with its head while moving
+        	for(int i = length-1; i>0; i--) {
         		x[i] = x[i-1];
         		y[i] = y[i-1];
-        		
-        		
-        		
         	}
-        	
-        	
-        	
+
+            // Move the snake's head in the moving direction
             if(vector == theSnake.UP) y[0]--;
             if(vector == theSnake.DOWN) y[0]++;
             if(vector == theSnake.LEFT) x[0]--;
             if(vector == theSnake.RIGHT) x[0]++;
+
+            // Record current time
             t1 = System.currentTimeMillis();
-            
+
+
+            // TODO: Change the coordinate limits
+            // Help the snake to move to the other side of the screen
             if(x[0]<0) x[0]=29;
             if(x[0]>29)x[0]=0;
             if(y[0]<0) y[0]=19;
@@ -108,9 +109,6 @@ public class theSnake {
         g.setColor(Color.green);
         for(int i = 0; i < length;i++) {
             g.fillRect(x[i]*20+1, y[i]*20+1, 18, 18);
-
-
-
         }
     }
 }

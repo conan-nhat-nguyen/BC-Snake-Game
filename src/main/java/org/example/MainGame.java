@@ -4,8 +4,9 @@ import javax.swing.*;
 
 public class MainGame extends JPanel implements Runnable {
 
-
-    static int [][] bg = new int [30][20];
+    private static final int screenWidth = 30;
+    private static final int screenLength = 20;
+    static int [][] bg = new int [screenWidth][screenLength];
     theSnake snake;
     Thread thread;
      MainMenu menu;
@@ -16,6 +17,8 @@ public class MainGame extends JPanel implements Runnable {
         this.addMouseMotionListener(menu);
 
         snake = new theSnake();
+
+        // The first food appears at (10,10)
         bg[10][10]=2;
         thread = new Thread(this);
         thread.start();
