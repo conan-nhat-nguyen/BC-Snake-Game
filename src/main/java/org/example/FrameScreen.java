@@ -9,16 +9,11 @@ public class FrameScreen extends JFrame {
 
     public FrameScreen() {
         mainGame = new MainGame();
-        mainMenu = new MainMenu(mainGame);
-
-        // TODO: add the mainMenu object to FrameScreen
         add(mainGame);
 //        add(mainMenu);
 
+    }s
 
-
-
-    }
     public static void main(String as[]) {
         FrameScreen f = new FrameScreen();
         f.setVisible(true);

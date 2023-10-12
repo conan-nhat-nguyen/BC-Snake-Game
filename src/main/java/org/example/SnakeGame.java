@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 public class SnakeGame extends JFrame{
 
     MainGame Sgame;
-    public MainMenu menu;
+     public MainMenu menu;
 
     public SnakeGame() {
         setSize(615,440);
