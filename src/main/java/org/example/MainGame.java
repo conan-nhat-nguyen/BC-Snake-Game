@@ -13,9 +13,6 @@ public class MainGame extends JPanel implements Runnable {
 
     public MainGame() {
         menu = new MainMenu(this);
-        this.addMouseListener(menu);
-        this.addMouseMotionListener(menu);
-
         snake = new theSnake();
 
         // The first food appears at (10,10)

@@ -14,10 +14,9 @@ public class SnakeGame extends JFrame{
         setSize(615,440);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Sgame = new MainGame();
-        add(Sgame);
+        menu = new MainMenu(Sgame);
+        add(menu);
         this.addKeyListener(new handler());
-        this.addMouseListener(menu);
-        this.addMouseMotionListener(menu);
         setVisible(true);
 
     }

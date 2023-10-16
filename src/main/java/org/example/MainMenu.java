@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 
-public class MainMenu extends MouseAdapter implements Runnable {
+public class MainMenu extends JPanel implements Runnable {
     private boolean active = false;
 
     // Different buttons
@@ -34,12 +34,6 @@ public class MainMenu extends MouseAdapter implements Runnable {
         active = true;
         buttonSetup();
         font = new Font("Roboto", Font.PLAIN, 25);
-
-
-
-
-
-
     }
 
     private void buttonSetup() {
